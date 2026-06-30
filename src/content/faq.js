@@ -34,7 +34,7 @@ export const faq = {
             { p: "Just as mountains stand firm in the face of challenges, Natwan Group stands as a partner that can be relied upon — balancing clear vision with precise execution to create real and sustainable value. The name is not simply a label; it is a philosophy upon which an entire entity is built." },
           ] },
           { num: "03", q: "Where is Natwan Group headquartered?", a: [
-            { p: "Natwan Group is headquartered in *Riyadh, Kingdom of Saudi Arabia* — at the heart of the markets we serve and the partnerships we build." },
+            { p: "Natwan Group is headquartered in *Dammam, Kingdom of Saudi Arabia* — at the heart of the markets we serve and the partnerships we build." },
             { note: { label: "— TO BE COMPLETED:", text: "Full office address pending." } },
           ] },
           { num: "04", q: "What is Natwan Group's vision?", a: [
@@ -143,7 +143,7 @@ export const faq = {
             { p: "Whether you are exploring a specific project, a strategic investment, or a broader partnership, we would be glad to start the conversation and explore how we can create value together." },
           ] },
           { num: "17", q: "Do you serve clients outside Saudi Arabia?", a: [
-            { p: "Yes. While we are headquartered in Riyadh, our vision is *regional* — and our practice draws on deep understanding of both local and regional markets." },
+            { p: "Yes. While we are headquartered in Dammam, our vision is *regional* — and our practice draws on deep understanding of both local and regional markets." },
             { p: "We work with clients and partners across the region, applying the same disciplined methodology and quality standards regardless of geography." },
           ] },
           { num: "18", q: "How long does it take to receive a response?", a: [
@@ -197,7 +197,7 @@ export const faq = {
             { p: "وكما تصمد الجبال أمام التحديات، تقف مجموعة نطوان شريكاً يُعتمَد عليه — توازن بين الرؤية الواضحة والتنفيذ الدقيق لخلق قيمة حقيقية ومستدامة. الاسم ليس مجرّد تسمية؛ بل فلسفة يُبنى عليها كيانٌ بأكمله." },
           ] },
           { num: "03", q: "أين يقع المقر الرئيسي لمجموعة نطوان؟", a: [
-            { p: "يقع المقر الرئيسي لمجموعة نطوان في *الرياض، المملكة العربية السعودية* — في قلب الأسواق التي نخدمها والشراكات التي نبنيها." },
+            { p: "يقع المقر الرئيسي لمجموعة نطوان في *الدمام، المملكة العربية السعودية* — في قلب الأسواق التي نخدمها والشراكات التي نبنيها." },
             { note: { label: "— قيد الاستكمال:", text: "عنوان المكتب الكامل قيد الإضافة." } },
           ] },
           { num: "04", q: "ما رؤية مجموعة نطوان؟", a: [
@@ -306,7 +306,7 @@ export const faq = {
             { p: "سواء كنت تستكشف مشروعاً محدّداً، أو استثماراً استراتيجياً، أو شراكة أوسع، يسعدنا أن نبدأ الحوار ونستكشف كيف يمكننا خلق القيمة معاً." },
           ] },
           { num: "17", q: "هل تخدمون عملاء خارج السعودية؟", a: [
-            { p: "نعم. رغم أن مقرّنا في الرياض، فإن رؤيتنا *إقليمية* — وتستند ممارستنا إلى فهمٍ عميق للأسواق المحلية والإقليمية معاً." },
+            { p: "نعم. رغم أن مقرّنا في الدمام، فإن رؤيتنا *إقليمية* — وتستند ممارستنا إلى فهمٍ عميق للأسواق المحلية والإقليمية معاً." },
             { p: "نعمل مع العملاء والشركاء عبر المنطقة، مطبّقين المنهجية المنضبطة ومعايير الجودة نفسها بغضّ النظر عن الموقع الجغرافي." },
           ] },
           { num: "18", q: "كم يستغرق تلقّي الردّ؟", a: [

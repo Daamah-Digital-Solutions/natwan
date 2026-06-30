@@ -5,6 +5,8 @@ import About from "./pages/About";
 import Sectors from "./pages/Sectors";
 import Projects from "./pages/Projects";
 import Gallery from "./pages/Gallery";
+import Branches from "./pages/Branches";
+import Branch from "./pages/Branch";
 import Faq from "./pages/Faq";
 import Contact from "./pages/Contact";
 
@@ -18,6 +20,8 @@ export const router = createBrowserRouter([
       { path: "sectors", element: <Sectors /> },
       { path: "projects", element: <Projects /> },
       { path: "gallery", element: <Gallery /> },
+      { path: "branches", element: <Branches /> },
+      { path: "branches/:slug", element: <Branch /> },
       { path: "faq", element: <Faq /> },
       { path: "contact", element: <Contact /> },
     ],

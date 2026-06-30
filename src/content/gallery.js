@@ -12,7 +12,7 @@ export const gallery = {
     filters: [
       { key: "all", label: "All" },
       { key: "abha", label: "Natwan Abha" },
-      { key: "cafe", label: "The Café" },
+      { key: "cafe", label: "Masa'at Café" },
       { key: "contracting", label: "Contracting" },
       { key: "projects", label: "Developments" },
     ],
@@ -37,7 +37,7 @@ export const gallery = {
     filters: [
       { key: "all", label: "الكل" },
       { key: "abha", label: "نطوان أبها" },
-      { key: "cafe", label: "المقهى" },
+      { key: "cafe", label: "مقهى مساءات" },
       { key: "contracting", label: "المقاولات" },
       { key: "projects", label: "أعمال" },
     ],

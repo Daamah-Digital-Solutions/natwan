@@ -54,7 +54,7 @@ export default function Home() {
       <section className="hero" id="hero" ref={heroRef}>
         <div className="hero-bg">
           <div className="hero-bg-img" ref={bgRef}>
-            <img src="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=85" alt="Riyadh skyline" />
+            <img src="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=85" alt="Dammam skyline" />
           </div>
         </div>
         <div className="hero-mountains">
@@ -321,7 +321,7 @@ export default function Home() {
               </div>
             </Reveal>
             <Reveal className="vision-visual" delay={1}>
-              <img src="https://images.unsplash.com/photo-1578895101408-1a36b834405b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85" alt="Riyadh future" />
+              <img src="https://images.unsplash.com/photo-1578895101408-1a36b834405b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85" alt="Dammam future" />
               <div className="vision-corner"><span>{c.vision.corner}</span></div>
               <div className="vision-2030-num">2030</div>
             </Reveal>

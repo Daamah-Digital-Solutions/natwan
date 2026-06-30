@@ -8,7 +8,7 @@ export const about = {
         { label: "Founded", value: "2007" },
         { label: "Years Operating", value: "18+" },
         { label: "Sectors", value: "5 Active" },
-        { label: "Headquarters", value: "Riyadh, KSA" },
+        { label: "Headquarters", value: "Dammam, KSA" },
       ],
     },
     story: {
@@ -37,7 +37,7 @@ export const about = {
       heading: "Eighteen years.\n*One continuous ascent.*",
       aside: "From foundation in 2007 to today, every step has been deliberate — building capability, deepening expertise, and expanding into sectors where we can create durable value.",
       events: [
-        { year: "2007", title: "Foundation", desc: "Natwan Group is established in Riyadh with a focus on contracting and real estate development." },
+        { year: "2007", title: "Foundation", desc: "Natwan Group is established in Dammam with a focus on contracting and real estate development." },
         { year: "2012", title: "Hospitality Expansion", desc: "Entry into hospitality and hotel apartment development, broadening the group's operating footprint." },
         { year: "2016", title: "Advisory Launch", desc: "Establishment of the advisory and business management arm to serve enterprise clients." },
         { year: "2019", title: "Asset Management", desc: "Launch of dedicated asset and investment management capability for long-term portfolios." },
@@ -111,7 +111,7 @@ export const about = {
       markerLabel: "By the Numbers",
       heading: "Years compound.\n*So do outcomes.*",
       cells: [
-        { label: "Established", num: "2007", symbol: "", desc: "The year Natwan Group was founded in Riyadh, KSA." },
+        { label: "Established", num: "2007", symbol: "", desc: "The year Natwan Group was founded in Dammam, KSA." },
         { label: "Years Operating", num: "18", symbol: "+", desc: "Of compound experience across complete economic cycles." },
         { label: "Active Sectors", num: "05", symbol: "", desc: "Integrated sectors operating under one philosophy." },
         { label: "Vision Horizon", num: "2030", symbol: "", desc: "Aligned with the goals of the Kingdom's strategic vision." },
@@ -135,7 +135,7 @@ export const about = {
         { label: "التأسيس", value: "2007" },
         { label: "أعوام العمل", value: "18+" },
         { label: "القطاعات", value: "5 نشطة" },
-        { label: "المقر الرئيسي", value: "الرياض، السعودية" },
+        { label: "المقر الرئيسي", value: "الدمام، السعودية" },
       ],
     },
     story: {
@@ -164,7 +164,7 @@ export const about = {
       heading: "ثمانية عشر عاماً.\n*صعودٌ متّصلٌ واحد.*",
       aside: "من التأسيس عام 2007 حتى اليوم، كانت كل خطوة مقصودة — بناءً للقدرات، وتعميقاً للخبرة، وتوسّعاً في قطاعات يمكننا أن نخلق فيها قيمة دائمة.",
       events: [
-        { year: "2007", title: "التأسيس", desc: "تأسيس مجموعة نطوان في الرياض مع التركيز على المقاولات والتطوير العقاري." },
+        { year: "2007", title: "التأسيس", desc: "تأسيس مجموعة نطوان في الدمام مع التركيز على المقاولات والتطوير العقاري." },
         { year: "2012", title: "التوسّع في الضيافة", desc: "الدخول في تطوير الضيافة والشقق الفندقية، توسيعاً لنطاق عمل المجموعة." },
         { year: "2016", title: "إطلاق الاستشارات", desc: "تأسيس ذراع الاستشارات وإدارة الأعمال لخدمة عملاء المؤسسات." },
         { year: "2019", title: "إدارة الأصول", desc: "إطلاق قدرة مخصّصة لإدارة الأصول والاستثمار للمحافظ طويلة الأمد." },
@@ -238,7 +238,7 @@ export const about = {
       markerLabel: "بالأرقام",
       heading: "الأعوام تتراكم.\n*وكذلك النتائج.*",
       cells: [
-        { label: "التأسيس", num: "2007", symbol: "", desc: "العام الذي تأسست فيه مجموعة نطوان في الرياض، السعودية." },
+        { label: "التأسيس", num: "2007", symbol: "", desc: "العام الذي تأسست فيه مجموعة نطوان في الدمام، السعودية." },
         { label: "أعوام العمل", num: "18", symbol: "+", desc: "من الخبرة التراكمية عبر دورات اقتصادية كاملة." },
         { label: "القطاعات النشطة", num: "05", symbol: "", desc: "قطاعات متكاملة تعمل وفق فلسفة واحدة." },
         { label: "أفق الرؤية", num: "2030", symbol: "", desc: "متوائمة مع أهداف رؤية المملكة الاستراتيجية." },

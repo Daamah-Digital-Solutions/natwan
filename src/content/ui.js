@@ -5,6 +5,7 @@ export const ui = {
     nav: [
       { label: "About", to: "/about" },
       { label: "Sectors", to: "/sectors" },
+      { label: "Branches", to: "/branches" },
       { label: "Projects", to: "/projects" },
       { label: "Gallery", to: "/gallery" },
       { label: "FAQ", to: "/faq" },
@@ -22,7 +23,7 @@ export const ui = {
     ],
     footer: {
       blurb:
-        "A diversified investment group operating across five integrated sectors since 2007 — headquartered in Riyadh, Kingdom of Saudi Arabia. We build what endures.",
+        "A diversified investment group operating across five integrated sectors since 2007 — headquartered in Dammam, Kingdom of Saudi Arabia. We build what endures.",
       profileCta: "Download Company Profile",
       cols: [
         {
@@ -40,6 +41,7 @@ export const ui = {
           links: [
             { label: "About", to: "/about" },
             { label: "Sectors", to: "/sectors" },
+            { label: "Branches", to: "/branches" },
             { label: "Projects", to: "/projects" },
             { label: "Gallery", to: "/gallery" },
             { label: "FAQ", to: "/faq" },
@@ -66,6 +68,7 @@ export const ui = {
     nav: [
       { label: "من نحن", to: "/about" },
       { label: "قطاعاتنا", to: "/sectors" },
+      { label: "فروعنا", to: "/branches" },
       { label: "مشاريعنا", to: "/projects" },
       { label: "المعرض", to: "/gallery" },
       { label: "الأسئلة الشائعة", to: "/faq" },
@@ -83,7 +86,7 @@ export const ui = {
     ],
     footer: {
       blurb:
-        "مجموعة استثمارية متنوّعة تعمل عبر خمسة قطاعات متكاملة منذ عام 2007 — ومقرّها الرئيسي في الرياض بالمملكة العربية السعودية. نبني ما يدوم.",
+        "مجموعة استثمارية متنوّعة تعمل عبر خمسة قطاعات متكاملة منذ عام 2007 — ومقرّها الرئيسي في الدمام بالمملكة العربية السعودية. نبني ما يدوم.",
       profileCta: "تحميل الملف التعريفي",
       cols: [
         {
@@ -101,6 +104,7 @@ export const ui = {
           links: [
             { label: "من نحن", to: "/about" },
             { label: "قطاعاتنا", to: "/sectors" },
+            { label: "فروعنا", to: "/branches" },
             { label: "مشاريعنا", to: "/projects" },
             { label: "المعرض", to: "/gallery" },
             { label: "الأسئلة الشائعة", to: "/faq" },

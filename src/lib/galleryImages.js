@@ -27,6 +27,22 @@ for (const [path, url] of Object.entries(modules).sort(([a], [b]) =>
   (grouped[key] ||= []).push(url);
 }
 
+// Curated lead photo per collection (matched by a filename substring). Moving it
+// to index 0 makes it the hero/lead used by the branch pages and the projects
+// page, so the most appealing image shows first.
+const LEAD = {
+  abha: "5827962362739231821",      // elegant majlis / living room
+  cafe: "5.53.23",                  // modern café & restaurant interior
+  contracting: "3467dcda",          // excavator fleet on site
+  projects: "IMG-20240218-WA0135",  // villa exterior at dusk
+};
+for (const key of Object.keys(grouped)) {
+  const needle = LEAD[key];
+  if (!needle) continue;
+  const i = grouped[key].findIndex((u) => u.includes(needle));
+  if (i > 0) grouped[key].unshift(grouped[key].splice(i, 1)[0]);
+}
+
 // { abha: [url, …], cafe: [url, …], contracting: [url, …], projects: [url, …] }
 export const collections = grouped;
 
