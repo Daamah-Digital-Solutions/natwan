@@ -3,8 +3,16 @@
 // Filenames with spaces / Arabic characters are handled because this runs at
 // build time (import.meta.glob), not via runtime string paths.
 
+// Only the four public-gallery folders are globbed here. Campaign-only assets
+// (e.g. src/images/nozl-atheer) are intentionally excluded so they neither
+// bloat the build nor leak into the site gallery.
 const modules = import.meta.glob(
-  "../images/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
+  [
+    "../images/natwan abha/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
+    "../images/cafe photos/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
+    "../images/general-images-contracting/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
+    "../images/natwan projects/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
+  ],
   { eager: true, query: "?url", import: "default" }
 );
 
