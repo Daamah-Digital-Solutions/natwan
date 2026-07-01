@@ -120,15 +120,15 @@ export const branches = {
     waBase: "https://wa.me/966554584321",
     maps: { query: "26.3805479,50.0578001", url: "https://maps.app.goo.gl/LoswipXk64XnBpi37" },
     en: {
-      crumb: "Atheer · Dammam",
-      metaTitle: "Atheer Serviced Apartments Dammam Al Faisaliah | Managed by Natwan",
+      crumb: "Nozul Atheer · Dammam",
+      metaTitle: "Nozul Atheer Serviced Apartments Dammam Al Faisaliah | Managed by Natwan",
       metaDescription:
-        "Enjoy spacious family living at Atheer Serviced Apartments in Al Faisaliah, Dammam. Shaded parking, large suites with double bathrooms — under Natwan's professional management.",
+        "Enjoy spacious family living at Nozul Atheer Serviced Apartments in Al Faisaliah, Dammam. Shaded parking, large suites with double bathrooms — under Natwan's professional management.",
       eyebrow: "DAMMAM · AL FAISALIAH · MANAGED BY NATWAN",
-      title: "Atheer Serviced Apartments — *Al Faisaliah, Dammam*",
+      title: "Nozul Atheer Serviced Apartments — *Al Faisaliah, Dammam*",
       tagline: "Spacious comfort for your family.",
       intro:
-        "Atheer Serviced Apartments welcomes you to the heart of Dammam in the strategic Al Faisaliah neighborhood. Atheer is fully and professionally managed by *Natwan Real Estate Company*, ensuring the highest standards of cleanliness and premium hotel service. If you're looking for wider apartment spaces and convenient parking that protects your privacy, Atheer is your ultimate choice for daily rentals in Dammam.",
+        "Nozul Atheer Serviced Apartments welcomes you to the heart of Dammam in the strategic Al Faisaliah neighborhood. Nozul Atheer is fully and professionally managed by *Natwan Real Estate Company*, ensuring the highest standards of cleanliness and premium hotel service. If you're looking for wider apartment spaces and convenient parking that protects your privacy, Nozul Atheer is your ultimate choice for daily rentals in Dammam.",
       facts: [
         { label: "Neighborhood", value: "Al Faisaliah" },
         { label: "Units", value: "35" },
@@ -136,7 +136,7 @@ export const branches = {
         { label: "Rental", value: "Daily" },
       ],
       features: {
-        heading: "Atheer's core strengths & advantages",
+        heading: "Nozul Atheer's core strengths & advantages",
         items: [
           { title: "Wider, more spacious layouts", desc: "Designed with larger interior spaces than traditional serviced apartments — freedom to move and relax." },
           { title: "Private, shaded parking", desc: "No worrying about the sun or finding a spot — comfortable, protected parking for guests' vehicles." },
@@ -162,10 +162,10 @@ export const branches = {
         ],
       },
       closing: {
-        heading: "Plan your upcoming stay at Atheer Dammam",
+        heading: "Plan your upcoming stay at Nozul Atheer Dammam",
         body: "We look forward to hosting you and offering our best daily rates.",
       },
-      whatsappText: "Hello Natwan, I would like to inquire about booking at Atheer Suites Al Faisaliah.",
+      whatsappText: "Hello Natwan, I would like to inquire about booking at Nozul Atheer Suites Al Faisaliah.",
     },
     ar: {
       crumb: "نزل أثير · الدمام",
