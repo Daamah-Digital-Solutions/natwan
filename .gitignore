@@ -28,8 +28,9 @@ dist-ssr
 .env.*
 !.env.example
 
-# Campaign source media (large originals; web-optimized copies live in public/atheer)
+# Campaign source media (large originals; web-optimized copies live in public/<campaign>)
 src/images/nozl-atheer/
+src/images/natwan-abha/
 # Source archives (not part of the build)
 src/images/*.zip
 src/images/*.rar

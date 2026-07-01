@@ -2,9 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Reveal from "../components/ui/Reveal";
 import Lightbox from "../components/ui/Lightbox";
 import { SocialIcon } from "../components/ui/icons";
-import { atheerLanding as LP } from "../content/atheerLanding";
-import atheerLogo from "../images/nozul-atheer-logo.svg";
-import "../styles/atheer.css";
+import "../styles/campaign.css";
 
 /* ---- inline icon set (24x24, currentColor) ---- */
 const ICONS = {
@@ -21,6 +19,10 @@ const ICONS = {
   restaurant: <><path d="M6 3v8M9 3v8M6 11h3M7.5 11v10" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /><path d="M16 3c-1.5 1-2 3-2 5s.5 3 2 3v10" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></>,
   store: <><path d="M4 9l1-5h14l1 5M4 9v11h16V9M4 9h16" strokeWidth="1.6" strokeLinejoin="round" /><path d="M4 9a2.2 2.2 0 0 0 4 0 2.2 2.2 0 0 0 4 0 2.2 2.2 0 0 0 4 0 2.2 2.2 0 0 0 4 0" strokeWidth="1.6" /><path d="M9.5 20v-5h5v5" strokeWidth="1.6" /></>,
   pin: <><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" strokeWidth="1.6" strokeLinejoin="round" /><circle cx="12" cy="9" r="2.5" strokeWidth="1.6" /></>,
+  wifi: <><path d="M4.5 11.5a11 11 0 0 1 15 0" strokeWidth="1.6" strokeLinecap="round" /><path d="M7.5 14.8a6.5 6.5 0 0 1 9 0" strokeWidth="1.6" strokeLinecap="round" /><circle cx="12" cy="18.5" r="1.3" fill="currentColor" stroke="none" /></>,
+  washer: <><rect x="4" y="3" width="16" height="18" rx="2" strokeWidth="1.6" /><circle cx="12" cy="13" r="5" strokeWidth="1.6" /><circle cx="12" cy="13" r="1.8" strokeWidth="1.6" /><path d="M7 6h2" strokeWidth="1.6" strokeLinecap="round" /></>,
+  elevator: <><rect x="5" y="3" width="14" height="18" rx="2" strokeWidth="1.6" /><path d="M12 6.5l-2.2 3h4.4l-2.2-3Z" strokeWidth="1.4" strokeLinejoin="round" /><path d="M12 17.5l-2.2-3h4.4l-2.2 3Z" strokeWidth="1.4" strokeLinejoin="round" /></>,
+  mountain: <><circle cx="17.5" cy="6.5" r="2.4" strokeWidth="1.5" /><path d="M3 20l5.5-9 3.5 5 2.5-3.5L21 20H3Z" strokeWidth="1.6" strokeLinejoin="round" /></>,
   play: <path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor" stroke="none" />,
 };
 
@@ -34,9 +36,8 @@ function Ic({ name, className }) {
   );
 }
 
-const wa = (text) => `${LP.waBase}?text=${encodeURIComponent(text || LP.whatsappDefault)}`;
-
-export default function AtheerLanding() {
+export default function CampaignLanding({ data: LP }) {
+  const wa = (text) => `${LP.waBase}?text=${encodeURIComponent(text || LP.whatsappDefault)}`;
   const [showBar, setShowBar] = useState(false);
   const [lb, setLb] = useState(null);
   const [openFaq, setOpenFaq] = useState(0);
@@ -101,7 +102,7 @@ export default function AtheerLanding() {
       <header className="lp-header">
         <div className="lp-header-inner">
           <a className="lp-brand" href="#top" aria-label={`${LP.brand.name} ${LP.brand.tagline}`}>
-            <img className="lp-logo" src={atheerLogo} alt={`${LP.brand.name} ${LP.brand.tagline}`} />
+            <img className="lp-logo" src={LP.logo} alt={`${LP.brand.name} ${LP.brand.tagline}`} />
           </a>
           <a className="lp-header-cta" href={wa(LP.hero.waText)} target="_blank" rel="noopener noreferrer">
             <SocialIcon name="whatsapp" />
@@ -113,12 +114,12 @@ export default function AtheerLanding() {
 
       {/* ===== HERO ===== */}
       <section className="lp-hero" id="top">
-        <img className="lp-hero-poster" src="/atheer/hero.webp" alt="" aria-hidden="true" />
+        <img className="lp-hero-poster" src={LP.hero.image} alt="" aria-hidden="true" />
         <video
           ref={heroRef}
           className="lp-hero-video"
-          src="/atheer/hero-loop.mp4"
-          poster="/atheer/hero-loop.webp"
+          src={LP.hero.video}
+          poster={LP.hero.videoPoster}
           autoPlay muted loop playsInline preload="auto"
         />
         <div className="lp-hero-inner">
@@ -380,7 +381,7 @@ export default function AtheerLanding() {
 
       {/* ===== FOOTER ===== */}
       <footer className="lp-footer">
-        <img className="lp-footer-logo" src={atheerLogo} alt={LP.brand.name} />
+        <img className="lp-footer-logo" src={LP.logo} alt={LP.brand.name} />
         <div className="lp-footer-channels">
           <a className="lp-footer-channel" href={wa(LP.whatsappDefault)} target="_blank" rel="noopener noreferrer">
             <SocialIcon name="whatsapp" />واتساب

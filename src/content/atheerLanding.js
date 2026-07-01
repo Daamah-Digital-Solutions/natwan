@@ -2,9 +2,12 @@
 // Snapchat campaign. Conversion-focused; copy mirrors the campaign creatives.
 // Photos & videos live in /public/atheer (already web-optimized).
 
+import logo from "../images/nozul-atheer-logo.svg";
+
 const WA = "https://wa.me/966554584321";
 
 export const atheerLanding = {
+  logo,
   // --- identity / contact ---
   brand: { name: "نزل أثير", tagline: "للشقق المخدومة", by: "إدارة وتشغيل مجموعة نطوان" },
   phone: "+966 55 458 4321",
@@ -23,6 +26,9 @@ export const atheerLanding = {
   // --- hero ---
   offerPill: "خصم 10٪ طوال موسم الأفراح",
   hero: {
+    image: "/atheer/hero.webp",
+    video: "/atheer/hero-loop.mp4",
+    videoPoster: "/atheer/hero-loop.webp",
     title: "جاي الدمام عشان زواج؟",
     highlight: "خَلِّ السكن آخر همّك",
     lede: "شقق مخدومة واسعة ونظيفة للعائلات في قلب الدمام — مفروشة بالكامل، بإدارة نطوان، ومواقف خاصة مظللة. احجز بنظام اليوم وأنت مطمئن.",

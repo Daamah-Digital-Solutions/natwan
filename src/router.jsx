@@ -9,11 +9,14 @@ import Branches from "./pages/Branches";
 import Branch from "./pages/Branch";
 import Faq from "./pages/Faq";
 import Contact from "./pages/Contact";
-import AtheerLanding from "./pages/AtheerLanding";
+import CampaignLanding from "./pages/CampaignLanding";
+import { atheerLanding } from "./content/atheerLanding";
+import { abhaLanding } from "./content/abhaLanding";
 
 export const router = createBrowserRouter([
-  // Standalone Snapchat campaign landing page (no site header/footer).
-  { path: "/atheer", element: <AtheerLanding /> },
+  // Standalone campaign landing pages (no site header/footer).
+  { path: "/atheer", element: <CampaignLanding data={atheerLanding} /> },
+  { path: "/abha", element: <CampaignLanding data={abhaLanding} /> },
   {
     path: "/",
     element: <Layout />,
