@@ -4,15 +4,15 @@
 
 import logo from "../images/natwan-abha-logo.svg";
 
-const WA = "https://wa.me/966503837774";
+const WA = "https://wa.me/966544968497";
 
 export const abhaLanding = {
   logo,
   // --- identity / contact ---
   brand: { name: "أجنحة نطوان أبها", tagline: "نطوان للفخامة عنوان", by: "إدارة وتشغيل مجموعة نطوان" },
-  phone: "+966 50 383 7774",
-  phoneLocal: "0503837774",
-  phoneHref: "tel:+966503837774",
+  phone: "+966 54 496 8497",
+  phoneLocal: "0544968497",
+  phoneHref: "tel:+966544968497",
   waBase: WA,
   whatsappDefault: "مرحباً نطوان أبها، أرغب بالاستفسار عن الحجز والأسعار 🌟",
   maps: { query: "18.2833335,42.6051029", url: "https://maps.app.goo.gl/V8Cc32X8wbw9qX3Z7" },
@@ -143,6 +143,18 @@ export const abhaLanding = {
     play: "تشغيل الجولة",
     src: "/abha/tour.mp4",
     poster: "/abha/tour.webp",
+  },
+
+  // --- stay type ---
+  stayType: {
+    tag: "— نوع الإقامة",
+    heading: "نوع الإقامة",
+    items: [
+      "إقامة يومية",
+      "إقامة لعدة ليالٍ",
+      "مناسبة لضيوف الأفراح والإجازات",
+    ],
+    note: "نطوان أبها يقدم شققًا للإقامة اليومية والقصيرة فقط، ولا تتوفر لدينا خدمة الإيجار الشهري.",
   },
 
   // --- booking form (-> WhatsApp) ---

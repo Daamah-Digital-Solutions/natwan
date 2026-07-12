@@ -4,15 +4,15 @@
 
 import logo from "../images/nozul-atheer-logo.svg";
 
-const WA = "https://wa.me/966554584321";
+const WA = "https://wa.me/966544968497";
 
 export const atheerLanding = {
   logo,
   // --- identity / contact ---
   brand: { name: "نزل أثير", tagline: "للشقق المخدومة", by: "إدارة وتشغيل مجموعة نطوان" },
-  phone: "+966 55 458 4321",
-  phoneLocal: "0554584321",
-  phoneHref: "tel:+966554584321",
+  phone: "+966 54 496 8497",
+  phoneLocal: "0544968497",
+  phoneHref: "tel:+966544968497",
   waBase: WA,
   whatsappDefault: "مرحباً نزل أثير، أرغب بالاستفسار عن الحجز والأسعار 🌟",
   maps: { query: "26.3805479,50.0578001", url: "https://maps.app.goo.gl/LoswipXk64XnBpi37" },
@@ -143,6 +143,18 @@ export const atheerLanding = {
     play: "تشغيل الجولة",
     src: "/atheer/tour.mp4",
     poster: "/atheer/tour.webp",
+  },
+
+  // --- stay type ---
+  stayType: {
+    tag: "— نوع الإقامة",
+    heading: "نوع الإقامة",
+    items: [
+      "إقامة يومية",
+      "إقامة لعدة ليالٍ",
+      "مناسبة لضيوف الأفراح والإجازات",
+    ],
+    note: "نزل أثير يقدم شققًا للإقامة اليومية والقصيرة فقط، ولا تتوفر لدينا خدمة الإيجار الشهري.",
   },
 
   // --- booking form (-> WhatsApp) ---

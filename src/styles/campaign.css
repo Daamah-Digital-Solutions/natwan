@@ -504,6 +504,59 @@
 }
 .lp-tour-play-circle svg { width: 30px; height: 30px; margin-inline-start: 3px; }
 
+/* ============================ STAY TYPE ============================ */
+.lp-stay-type { background: var(--paper); }
+.lp-stay-type-card {
+  max-width: 680px;
+  margin: 40px auto 0;
+  background: #fff;
+  border: 1px solid var(--line-mid);
+  border-radius: var(--lp-radius);
+  padding: clamp(28px, 4vw, 46px);
+  box-shadow: 0 20px 56px rgba(26, 49, 26, 0.07);
+}
+.lp-stay-type-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0 0 28px;
+  padding: 0;
+}
+.lp-stay-type-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: clamp(16px, 2.2vw, 18px);
+  font-weight: 700;
+  color: var(--forest);
+}
+.lp-stay-check {
+  width: 22px; height: 22px;
+  flex-shrink: 0;
+  color: var(--wa-dark);
+}
+.lp-stay-type-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(38, 71, 38, 0.06);
+  border: 1px solid rgba(38, 71, 38, 0.15);
+  border-radius: var(--lp-radius-sm);
+  padding: 16px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--forest);
+  line-height: 1.6;
+  margin: 0;
+}
+.lp-stay-pin {
+  width: 20px; height: 20px;
+  flex-shrink: 0;
+  color: var(--forest);
+  margin-top: 2px;
+}
+
 /* ============================ FORM ============================ */
 .lp-form-section { background: var(--cream); }
 .lp-form-card {

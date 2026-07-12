@@ -60,7 +60,7 @@ export default function CampaignLanding({ data: LP }) {
   // Best-effort autoplay nudge for the muted hero loop (some mobile browsers).
   useEffect(() => {
     const v = heroRef.current;
-    if (v) v.play().catch(() => {});
+    if (v) v.play().catch(() => { });
   }, []);
 
   useEffect(() => {
@@ -73,7 +73,7 @@ export default function CampaignLanding({ data: LP }) {
   const playTour = () => {
     setTourPlaying(true);
     const v = tourRef.current;
-    if (v) { v.muted = false; v.play().catch(() => {}); }
+    if (v) { v.muted = false; v.play().catch(() => { }); }
   };
 
   const submitBooking = (e) => {
@@ -291,6 +291,36 @@ export default function CampaignLanding({ data: LP }) {
           </Reveal>
         </div>
       </section>
+
+      {/* ===== STAY TYPE (Atheer-only) ===== */}
+      {LP.stayType && (
+        <section className="lp-section lp-stay-type">
+          <div className="lp-inner lp-center">
+            <Reveal className="lp-reveal">
+              <h2 className="lp-h2">{LP.stayType.heading}</h2>
+            </Reveal>
+            <Reveal className="lp-stay-type-card lp-reveal" delay={1}>
+              <ul className="lp-stay-type-list">
+                {LP.stayType.items.map((item) => (
+                  <li key={item}>
+                    <svg className="lp-stay-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+                      <path d="M4 12.5 L9.5 18 L20 6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="lp-stay-type-note">
+                <svg className="lp-stay-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+                  <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" strokeWidth="1.6" strokeLinejoin="round" />
+                  <circle cx="12" cy="9" r="2.5" strokeWidth="1.6" />
+                </svg>
+                {LP.stayType.note}
+              </p>
+            </Reveal>
+          </div>
+        </section>
+      )}
 
       {/* ===== BOOKING FORM ===== */}
       <section className="lp-section lp-form-section">
