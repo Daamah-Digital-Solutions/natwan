@@ -24,6 +24,16 @@ const FOLDER_TO_KEY = {
   "natwan projects": "projects",
 };
 
+// The single "natwan projects" folder holds photos from several distinct
+// construction projects. Split them by filename so each project on the Projects
+// page gets its own gallery. Any file not listed here falls back to "projects".
+const PROJECT_FILE_KEY = {
+  "IMG-20240218-WA0135": "home5", // finished villa — exterior at dusk
+  "IMG-20240218-WA0136": "home5", // finished villa — entrance hall / elevator
+  "IMG-20251014-WA0040": "home7", // structural shells under construction
+  "IMG-20251014-WA0042": "home7", // structural shells under construction
+};
+
 // Group image URLs by collection key, keeping a deterministic order.
 const grouped = {};
 for (const [path, url] of Object.entries(modules).sort(([a], [b]) =>
@@ -31,7 +41,12 @@ for (const [path, url] of Object.entries(modules).sort(([a], [b]) =>
 )) {
   const match = path.match(/\/images\/([^/]+)\//);
   const folder = match ? match[1] : "misc";
-  const key = FOLDER_TO_KEY[folder] || folder;
+  let key = FOLDER_TO_KEY[folder] || folder;
+  if (folder === "natwan projects") {
+    const file = path.split("/").pop();
+    const hit = Object.keys(PROJECT_FILE_KEY).find((n) => file.includes(n));
+    if (hit) key = PROJECT_FILE_KEY[hit];
+  }
   (grouped[key] ||= []).push(url);
 }
 
@@ -42,7 +57,7 @@ const LEAD = {
   abha: "5827962362739231821",      // elegant majlis / living room
   cafe: "5.53.23",                  // modern café & restaurant interior
   contracting: "3467dcda",          // excavator fleet on site
-  projects: "IMG-20240218-WA0135",  // villa exterior at dusk
+  home5: "IMG-20240218-WA0135",     // finished villa exterior at dusk
 };
 for (const key of Object.keys(grouped)) {
   const needle = LEAD[key];

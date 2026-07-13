@@ -24,7 +24,7 @@ export const projects = {
     scopeLabel: "Scope of Work",
     items: [
       {
-        key: "projects",
+        key: "home5",
         num: "01.",
         idLabel: "PROJECT 01",
         title: "Natwan Home 5",
@@ -150,7 +150,7 @@ export const projects = {
     scopeLabel: "أبرز الأعمال المنفذة",
     items: [
       {
-        key: "projects",
+        key: "home5",
         num: "01.",
         idLabel: "مشروع 01",
         title: "نطوان هوم 5",
