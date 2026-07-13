@@ -15,6 +15,7 @@ const modules = import.meta.glob(
     "../images/home-3/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
     "../images/home-5/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
     "../images/home-7/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
+    "../images/abha-mahala/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
   ],
   { eager: true, query: "?url", import: "default" }
 );
@@ -30,6 +31,7 @@ const FOLDER_TO_KEY = {
   "home-3": "home3",
   "home-5": "home5",
   "home-7": "home7",
+  "abha-mahala": "abhaMahala",
 };
 
 // Group image URLs by collection key, keeping a deterministic order.
