@@ -70,21 +70,25 @@ export default function Projects() {
                 <div className="project-title-row">
                   <h2>{p.title}</h2>
                   <div className="project-facts">
-                    <div className="project-fact">
-                      <span className="project-fact-label">{c.factLabels.sector}</span>
-                      <span className="project-fact-value">{p.sector}</span>
-                    </div>
-                    <div className="project-fact">
-                      <span className="project-fact-label">{c.factLabels.location}</span>
-                      <span className="project-fact-value">{p.location}</span>
-                    </div>
-                    <div className="project-fact">
-                      <span className="project-fact-label">{c.factLabels.year}</span>
-                      <span className="project-fact-value">{p.year}</span>
-                    </div>
+                    {p.facts.map((f, fi) => (
+                      <div className="project-fact" key={fi}>
+                        <span className="project-fact-label">{f.label}</span>
+                        <span className="project-fact-value">{f.value}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <p className="project-body">{p.body}</p>
+                {p.scope && (
+                  <div className="project-scope">
+                    <div className="project-scope-label">{c.scopeLabel}</div>
+                    <ul className="project-scope-list">
+                      {p.scope.map((s, si) => (
+                        <li key={si}>{s}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </Reveal>
 
               {photos.length > 0 && (

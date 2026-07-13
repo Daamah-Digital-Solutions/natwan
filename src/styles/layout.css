@@ -51,13 +51,13 @@
     color: var(--sand);
   }
 .brand-logo {
-    height: 38px;
+    height: 54px;
     width: auto;
     display: block;
     transition: opacity 0.3s, height 0.4s ease;
   }
 .brand:hover .brand-logo { opacity: 0.82; }
-.site-header.scrolled .brand-logo { height: 32px; }
+.site-header.scrolled .brand-logo { height: 44px; }
 .footer-brand-block .brand-logo { height: 54px; }
 /* ===== Social icon bar ===== */
 .social-links {
@@ -378,6 +378,6 @@ body.menu-open { overflow: hidden; }
 .footer-top { grid-template-columns: 1fr; }
 .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
 .brand-name { font-size: 20px; }
-.brand-logo { height: 32px; }
+.brand-logo { height: 44px; }
 .footer-brand-block .brand-logo { height: 46px; }
 }
