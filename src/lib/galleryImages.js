@@ -12,26 +12,24 @@ const modules = import.meta.glob(
     "../images/cafe photos/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
     "../images/general-images-contracting/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
     "../images/natwan projects/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
+    "../images/home-3/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
+    "../images/home-5/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
+    "../images/home-7/**/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,WEBP}",
   ],
   { eager: true, query: "?url", import: "default" }
 );
 
-// Map the on-disk folder names to stable, friendly collection keys.
+// Map the on-disk folder names to stable, friendly collection keys. The home-N
+// folders hold web-optimized, hand-curated photos for each construction project
+// (originals live in the gitignored Arabic-named folders).
 const FOLDER_TO_KEY = {
   "natwan abha": "abha",
   "cafe photos": "cafe",
   "general-images-contracting": "contracting",
   "natwan projects": "projects",
-};
-
-// The single "natwan projects" folder holds photos from several distinct
-// construction projects. Split them by filename so each project on the Projects
-// page gets its own gallery. Any file not listed here falls back to "projects".
-const PROJECT_FILE_KEY = {
-  "IMG-20240218-WA0135": "home5", // finished villa — exterior at dusk
-  "IMG-20240218-WA0136": "home5", // finished villa — entrance hall / elevator
-  "IMG-20251014-WA0040": "home7", // structural shells under construction
-  "IMG-20251014-WA0042": "home7", // structural shells under construction
+  "home-3": "home3",
+  "home-5": "home5",
+  "home-7": "home7",
 };
 
 // Group image URLs by collection key, keeping a deterministic order.
@@ -41,12 +39,7 @@ for (const [path, url] of Object.entries(modules).sort(([a], [b]) =>
 )) {
   const match = path.match(/\/images\/([^/]+)\//);
   const folder = match ? match[1] : "misc";
-  let key = FOLDER_TO_KEY[folder] || folder;
-  if (folder === "natwan projects") {
-    const file = path.split("/").pop();
-    const hit = Object.keys(PROJECT_FILE_KEY).find((n) => file.includes(n));
-    if (hit) key = PROJECT_FILE_KEY[hit];
-  }
+  const key = FOLDER_TO_KEY[folder] || folder;
   (grouped[key] ||= []).push(url);
 }
 
@@ -57,7 +50,7 @@ const LEAD = {
   abha: "5827962362739231821",      // elegant majlis / living room
   cafe: "5.53.23",                  // modern café & restaurant interior
   contracting: "3467dcda",          // excavator fleet on site
-  home5: "IMG-20240218-WA0135",     // finished villa exterior at dusk
+  // home-3/5/7 photos are pre-ordered on disk (01.webp is the lead).
 };
 for (const key of Object.keys(grouped)) {
   const needle = LEAD[key];
